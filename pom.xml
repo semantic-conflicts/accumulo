@@ -1005,7 +1005,20 @@
             </excludes>
           </configuration>
         </plugin>
-      </plugins>
+      <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
     </pluginManagement>
     <plugins>
       <plugin>
@@ -1309,6 +1322,19 @@
         <extensions>true</extensions>
         <inherited>true</inherited>
       </plugin>
+    <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
     </plugins>
   </build>
   <profiles>
@@ -1536,7 +1562,20 @@
                 </lifecycleMappingMetadata>
               </configuration>
             </plugin>
-          </plugins>
+          <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
         </pluginManagement>
       </build>
     </profile>
@@ -1566,7 +1605,20 @@
                 <finalName>accumulo-${project.version}</finalName>
               </configuration>
             </plugin>
-          </plugins>
+          <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
         </pluginManagement>
       </build>
     </profile>
@@ -1612,7 +1664,20 @@
               <configFile>${eclipseFormatterStyle}</configFile>
             </configuration>
           </plugin>
-        </plugins>
+        <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
       </build>
     </profile>
     <profile>
@@ -1644,7 +1709,20 @@
                 </sourceFileExcludes>
               </configuration>
             </plugin>
-          </plugins>
+          <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
         </pluginManagement>
       </build>
     </profile>
